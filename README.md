@@ -36,3 +36,12 @@
 ## 3. Архитектурная диаграмма
 
 ![C4 Architecture Diagram](./architecture-c4.png)
+
+## 4. Спецификация REST API
+
+| Метод | URL | Описание |
+| :--- | :--- | :--- |
+| `POST` | `/api/v1/users/register` | Регистрация нового пользователя |
+| `GET` | `/api/v1/users/{userId}` | Просмотр профиля пользователя |
+| `POST` | `/api/v1/users/{userId}/buy/{gameId}` | Покупка игры (Many-to-Many) |
+| `GET` | `/api/v1/users/{userId}/library` | Просмотр библиотеки игр пользователя |
